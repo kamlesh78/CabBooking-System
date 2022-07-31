@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CabBooking</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/WelcomePage.css">
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript">
+
+window.onbeforeload = function(){
+	window.location.replace("Welcome.html");
+}
+</script>
+</head>
+
+<body >
+
+	<section class="bgimg w3-display-container w3-text-black ">
+		<section class="col-md-6 col-md-offset-1 w3-allerta">
+			<br>
+			<p>
+				<span class="glyphicon glyphicon-map-marker"></span>CabBooking </p>
+		</section>
+
+		<section class="col-md-6 col-md-offset-2 w3-container w3-xlarge">
+			<br>
+			<br>
+			<br>
+			<br>
+			<p>
+				<button type="button" class="btn btn-basic btn-lg" id="myBtn">Book a Ride</button>
+			</p>
+		</section>
+
+	</section>
+
+
+
+	<section class="modal fade" id="myModal" role="dialog">
+		<section class="modal-dialog">
+
+			<!-- Modal content-->
+			<section class="modal-content">
+				<section class="modal-header" style="padding: 35px 50px;">
+					<h4>
+						<span class="glyphicon glyphicon-lock"></span> Login
+					</h4>
+				</section>
+
+				<section class="modal-body" style="padding: 40px 50px;">
+					<form role="form" action="" method="post" id="login_submit">
+						<section class="form-group">
+							<label for="phonenum"><span
+								class="glyphicon glyphicon-user"></span> Username</label> <input
+								type="text" class="form-control" name="username" id="username"
+								placeholder="Enter Username " required>
+						</section>
+						
+						<section class="form-group">
+							<label for="psw"><span
+								class="glyphicon glyphicon-eye-open"></span> Password</label> <input
+								type="password" class="form-control" name="password" id="password"
+								placeholder="Enter password" required>
+						</section>
+				 
+				 
+    
+				 	<section class="form-select">
+							<label for="usertype"><span
+								class="glyphicon glyphicon-user"></span> User Type</label><br> 
+							<select class="form-select form-select-lg mb-3" aria-label=".form-select-sm example" id="usert">
+  <option selected>Select User</option>
+  <option value="admin">Admin</option>
+  <option value="customer">Customer</option>
+  <option value="driver">Driver</option>
+</select>
+						</section>
+				 
+						
+						<section class="checkbox">
+							<label><input type="checkbox" value="">Remember
+								me</label>
+						</section>
+
+						<button type="submit" class="btn btn-basic btn-block"  >
+							<span class="glyphicon glyphicon-off"></span> Login
+						</button>
+
+					</form>
+				</section>
+
+				<section class="modal-footer">
+					<button type="submit" class="btn btn-danger btn-default pull-left"
+						onclick="check()" data-dismiss="modal">
+						<span class="glyphicon glyphicon-remove"></span> Cancel
+					</button>
+					<p>
+						Not a member? <a href="Register">Sign Up</a>
+					</p>
+					 
+				</section>
+			</section>
+
+		</section>
+	</section>
+
+	<script>
+		$(document).ready(function() {
+			$("#myBtn").click(function() {
+				$("#myModal").modal();
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Book Ride</title>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="CSS/Home_Page.css">
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+	<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/book.js"></script>
+<script src="js/RideHistory.js"></script>
+
+
+ <style>
+    div.alert-messages {
+        position: fixed;
+        top: 50px;
+        left: 25%;
+        right: 25%;
+        z-index: 7000;
+    }
+    </style>
+
+</head>
+
+<body>
+	
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<br> <a href="UserProfile"><span
+			class="glyphicon glyphicon-user"
+			style="font-size: 30px; color: white;"></span>&ensp; Your Account</a> <a></a>
+		<a href="booking"><span class="glyphicon glyphicon-star-empty"
+			style="font-size: 29px; color: white;"></span>&ensp; Book Ride</a> <a></a>
+		
+			
+			
+		<a href="RideHistory"><span class="glyphicon glyphicon-list"
+			style="font-size: 30px; color: white;"></span>&ensp; Rides History</a> <a></a>
+				<a href="driver_feedback"><span class="glyphicon glyphicon-list" style="font-size:30px;color:white;"></span>&ensp; Driver FeedBack</a>
+			<a></a>
+			<a href="customer_feedback" target="_blank"><span class="glyphicon glyphicon-list" style="font-size:30px;color:white;"></span>&ensp;Platform FeedBack</a>
+			<a></a>
+		<a href="/"><span class="glyphicon glyphicon-off"
+			style="font-size: 30px; color: white;"></span>&ensp; Log Out</a>
+	</div>
+	
+	
+	
+	<div id="main">
+		<span style="font-size: 40px; cursor: pointer" onclick="openNav()">&#9776;</span>
+	</div>
+
+	<div id="title" style="cursor: pointer" onclick="">
+			<a href="SelectionPage" style="color:white"><span class="glyphicon glyphicon-map-marker"></span>CabBooking
+		</a>
+		</div>
+	<hr>
+	
+	 
+
+
+
+
+
+    <div class="alert-messages text-center">
+        </div>
+ 
+ 
+ 
+ 
+ 
+ 
+
+	 
+	<div class="d-flex flex-row-reverse">
+		<div class="heading">Take a Ride</div>
+		<div class="row">
+			<form role="form" action="" method="post" id="book_ride">
+				<div class="col-md-offset-4">
+					<div>
+						<br> &ensp;
+						 
+						<h>Source:</h>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp; 
+						 <select class="selectpicker show-tick"
+							data-style="btn-primary" id="source" name="type">
+							<option value="source">Select Source location</option>
+							<option value="delhi">Delhi</option>
+							<option value="dehradun">Dehradun</option>
+							<option value="haldwani">Haldwani</option>
+						</select> 
+						
+						
+						
+						<br> <br>&ensp;
+						<h>Destination: </h>
+					 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp; 
+						 <select class="selectpicker show-tick"
+							data-style="btn-primary" id="destination" name="type">
+							<option value="destinations">Select Destination</option>
+							
+						</select>
+						 
+						 
+						 
+						<br><br> &ensp;
+						<h>Car Type:</h>
+						 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp; 
+						 <select class="selectpicker show-tick"
+							data-style="btn-primary" id="c_type" name="type">
+							<option value="micro">Micro</option>
+							<option value="mini">Mini</option>
+							<option value="suv">SUV</option>
+						</select> 
+						<br> <br>
+						 &ensp;
+						<h>DEPART(Date and time):</h>
+						 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						
+				  <input type="datetime-local" id="datetime" name="datetime">
+
+						
+						
+						
+						
+						
+						<br><br><br> <span class="tab-space"></span>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<button type="submit" class="btn btn-default submit"
+							>Book Ride</button>
+						
+					 
+					</div>
+				</div>
+			</form>
+			
+			
+			
+			<center>
+			&ensp; <br><br>   &ensp;
+						<h> Total Distance(in Km) :</h>
+						<div id="es_dist"></div>
+						 <br> &ensp;
+						<h>  Ride Cost(in Rs) :</h>
+						<div id="es_time"></div>
+						 
+						</center>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>

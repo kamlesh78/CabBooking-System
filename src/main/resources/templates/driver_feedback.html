@@ -1,0 +1,155 @@
+
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/RideHistory.css">
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+        <link href="css/admin_css/styles.css" rel="stylesheet" />
+        
+        
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
+<script src="js/RideHistory.js"></script>
+<script src="js/driver_star.js"></script>
+<title>Driver Feedback</title>
+
+
+
+                 <style>
+    div.alert-messages {
+        position: fixed;
+        top: 50px;
+        left: 25%;
+        right: 25%;
+        z-index: 7000;
+    }
+    </style>
+</head>
+<body>
+<div class="alert-messages text-center">
+        </div>
+	<header>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<br> <a href="UserProfile"><span
+				class="glyphicon glyphicon-user"
+				style="font-size: 30px; color: white;"></span>&ensp; Your Account</a> <a></a>
+			<a href="booking"><span
+				class="glyphicon glyphicon-star-empty"
+				style="font-size: 30px; color: white;"></span>&ensp; Book Ride</a> <a></a>
+
+			<a href="RideHistory"><span class="glyphicon glyphicon-list"
+				style="font-size: 30px; color: white;"></span>&ensp; Rides History</a> <a></a>
+				<a href="customer_feedback" target="_blank"><span class="glyphicon glyphicon-list" style="font-size:30px;color:white;"></span>&ensp; FeedBack</a>
+			<a></a>
+			<a href="/" id="logout"><span class="glyphicon glyphicon-off"
+				style="font-size: 30px; color: white;"></span>&ensp; Log Out</a>
+		</div>
+
+		<div id="main">
+			<span style="font-size: 40px; cursor: pointer" onclick="openNav()">&#9776;</span>
+		</div>
+
+		</div>
+
+		<div id="title" style="cursor: pointer" onclick="">
+			<a href="SelectionPage" style="color: white"><span
+				class="glyphicon glyphicon-map-marker"></span>CabBooking </a>
+		</div>
+		<hr>
+	</header>
+  
+               <div class="card mb-4 ">
+                            <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
+                                		<center><h2 style="font-weight:bold">FeedBack for Driver</h2></center>	
+                            </div>
+                            <div class="card-body">
+          
+          <br><br>
+           <div class="container"> 
+		<form id="updd">
+		 
+			
+				 <section class="form-group col-xs-4" >  
+			<select class="form-select form-select-lg mb-3" id="select_d">
+   
+ 
+</select></section>
+			 			<button type="button" class="btn btn-primary" id="finduser">Submit</button>
+			
+			<table class="table table-hover   table-responsive"  id="customer_detail">
+  <thead class="thead">
+    <tr>										
+    										<th>Driver Name</th>
+  											<th>Driver Mobile NO</th>
+                                            <th>Rating(out of 5)</th>
+                                            
+                                         
+                                            
+                                             
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+   
+    
+     <td>  
+     <section class="form-group">
+      <input
+			type="text" class="form-control" name="cus"   
+			placeholder="Driver Name" id="driver_name"> 
+	</section>
+	</td>
+    <td>
+     <section class="form-group"> 
+     <input
+			type="text" class="form-control" name="customerName"   
+			placeholder="Driver Mobile NO" id="driver_mobile"> 
+	</section>
+    </td>
+    
+    
+    <td>
+      <section class="form-group">  <input
+			type="text" class="form-control" name="customerEmail"   
+			placeholder="star" id="driver_star" > 
+	</section>
+    </td>
+    
+    
+  
+    </tr>
+  </tbody>
+</table>
+<center><button type="button" class="btn btn-primary" id="submit_user">Update</button></center>
+
+		</form>
+	 </div> 
+          
+          
+        
+                            </div>
+                        </div>
+	
+
+</body>
+</html>
+
+

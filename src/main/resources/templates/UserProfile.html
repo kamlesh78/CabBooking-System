@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+	<title>User Profile </title>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/UserProfile.css"> 
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Francois+One">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Convergence">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/userprofile.js"></script>
+		<script src="js/RideHistory.js"></script>
+</head>
+
+<body>
+	<header>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<br>
+ 			<a href="UserProfile"><span class="glyphicon glyphicon-user" style="font-size:30px;color:white;"></span>&ensp; Your Account</a>
+ 			<a></a>
+				
+					<a href="booking"><span class="glyphicon glyphicon-star-empty"
+			style="font-size: 29px; color: white;"></span>&ensp; Book Ride</a> <a></a>
+				
+			<a href="RideHistory"><span class="glyphicon glyphicon-list" style="font-size:30px;color:white;"></span>&ensp; Rides History</a>
+			<a></a>
+			
+			<a href="driver_feedback"><span class="glyphicon glyphicon-list" style="font-size:30px;color:white;"></span>&ensp; Driver FeedBack</a>
+			<a></a>
+			<a href="customer_feedback" target="_blank"><span class="glyphicon glyphicon-list" style="font-size:30px;color:white;"></span>&ensp;Platform FeedBack</a>
+			<a></a>
+			<a href="/" id="logout"><span class="glyphicon glyphicon-off" style="font-size:30px;color:white;"></span>&ensp; Log Out</a>
+		</div>
+
+		<div id="main">
+			<span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+		</div>
+
+		<div id="title" style="cursor: pointer" onclick="">
+			<a href="SelectionPage" style="color:white"><span class="glyphicon glyphicon-map-marker"></span>CabBooking
+		</a>
+		</div>
+	</header>
+	 
+ 
+	<div class="container">
+		<h1>Your Profile</h1>
+		<br>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="well well-sm">
+					<div class="row">
+						<div class="col-sm-6 col-md-4">
+						
+						</div>
+						<div class="col-sm-6 col-md-8">
+							
+								<h2><i class="glyphicon glyphicon-user" > <span id="username"> </span> </i>	 
+								</h2>
+								
+								<p>
+								<h2>
+									<i class="glyphicon glyphicon-phone" > <span id="phone"> </span> </i>
+								 </h2>
+									<h2> <i class="glyphicon glyphicon-envelope" > <span id="email"> </span> </i></h2>
+						 
+									 
+								</p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+</body>
+
+</html>

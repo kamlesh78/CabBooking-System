@@ -1,0 +1,158 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title> Registration</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" 	href="css/Register_.css">
+<script
+	src="js/register.js"></script>
+
+
+
+
+ <style>
+    div.alert-messages {
+        position: fixed;
+        top: 50px;
+        left: 25%;
+        right: 25%;
+        z-index: 7000;
+    }
+    </style>
+
+
+</head>
+
+<body>
+
+
+	
+    <div class="alert-messages text-center">
+        </div>
+        
+        
+        
+        
+	<section class="bgimg w3-display-container w3-text-black "> <br>
+	<br>
+	<br>
+	<section class="container"> <section class="container-header"
+		style="padding:35px 50px;">
+	<h4>
+		<span class="glyphicon glyphicon-pencil"></span> Registration
+	</h4>
+	</section> <section class="container-body" style="padding:40px 50px;">
+	<form role="form" action="" method="post" id="register">
+		<section class="form-group"> <label for="firstName"><span
+			class="glyphicon glyphicon-user"></span> Username</label> <input
+			type="text" class="form-control" name="firstName" required=""
+			placeholder="Enter First Name" id="user"> </section>
+
+	
+
+		<section class="form-group"> <label for="emailID"><span
+			class="glyphicon glyphicon-envelope"></span> Email ID</label> <input
+			type="email" class="form-control" name="emailID" required=""
+			placeholder="Enter Email ID" id="email"> </section>
+
+	
+ 
+
+		<section class="form-group"> <label for="phoneNumber"><span
+			class="glyphicon glyphicon-phone"></span> Phone NO</label> 
+			<input type="tel" class="form-control" name="phno" maxlength="10"
+			required="" placeholder="Enter Phone Number" id="phno"> </section>
+
+		<section class="form-group"> <label for="password"><span
+			class="glyphicon glyphicon-eye-open"></span> Password</label> <input
+			type="password" class="form-control" name="password"  required=""
+			placeholder="Enter Password" id="pass"> </section>
+<br>
+		<section class="form-group"> <label for="usertype"><span
+			class="glyphicon glyphicon-user "></span> User Type</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		
+		    <select class="form-select form-select-lg" id="select_user">
+		    <option value="select">Select User Type</option>
+     <option value="customer">Customer</option>
+     <option value="driver">Driver</option>
+      
+   </select>
+			
+			</section>
+			
+			<br>
+<section class="form-group" style="visibility:hidden;max-height: 0;" id="chg"> <label for="cartype"><span
+			class="glyphicon glyphicon-icon-car"></span> Car Type</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  
+		    <select class="form-select form-select-lg" id="car_type">
+		    <option value="select">Select Car Type</option>
+     <option value="micro">Micro</option>
+     <option value="mini">Mini</option>
+      <option value="suv">SUV</option>
+      
+   </select>
+   <br><br>
+   <section class="form-group"> <label for="license_no"><span
+			class="glyphicon glyphicon-education"></span> License NO</label> <input
+			type="text" class="form-control" name="license_no"   
+			placeholder="Enter License No" id="license_no"> 
+	</section>
+			
+			
+		 
+			</section>
+
+		<button type="submit" class="btn btn-basic btn-block" >
+			<span class="glyphicon glyphicon-ok"></span> Sign Up
+		</button>
+
+	</form>
+	</section> <section class="container-footer">
+	<p align="center">
+		Already a member? <a href="/">Login</a>
+	</p>
+	</section> </section> </section>
+
+
+
+</body>
+</html>
+
+<!-- <html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Register</title>
+</head>
+<body>
+<form action="CreateUser" method="post">
+First Name<input type="text" name="firstName"><br><br>
+Last Name <input type="text" name="lastName"><br><br>
+EmailID <input type="text" name="emailID"><br><br>
+Gender <select name="gender">
+<option value="Female">Female</option>
+<option value="Male">Male</option>
+<option value="Other">Other</option>
+</select><br><br>
+Date of Birth <input type="date"  date-format="YYYY MM DD" name="dateOfBirth"><br><br>
+Mobile Number<input type="tel"name="mobileNumber"><br><br>
+Password <input type="password" name="password"><br><br>
+Re-enter Password <input type="password" name="rPassword"><br><br>
+<input type="submit" value="Create User">
+</form>
+</body>
+</html> -->
